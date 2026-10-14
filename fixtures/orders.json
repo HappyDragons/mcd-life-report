@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "synthetic": true,
+    "label": "合成示例数据（虚构）",
+    "notice": "本文件是人工虚构的合成示例数据，用于离线演示与测试；不是真实用户订单，也不是实时的 MCP 返回结果。所有订单号、门店名、时间、金额均为虚构。",
+    "schema_version": "1.0",
+    "describes": "模拟麦当劳 MCP 只读工具 order-list 的返回结构（外层信封 + 订单数组）",
+    "window_note": "MCP 的 order-list 无分页参数，只返回最近 10 单；本文件正好 10 单，用于还原该窗口限制。",
+    "amount_unit": "cent",
+    "generated_by": "mcd-life-report 仓储内置 fixtures"
+  },
+  "data": {
+    "orders": [
+      {
+        "orderId": "SYN-0001",
+        "orderTime": "2026-05-04 12:20:11",
+        "payAmount": 3950,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "巨无霸", "quantity": 1, "price": 2500, "category": "汉堡" },
+          { "productName": "薯条(中)", "quantity": 1, "price": 1000, "category": "小食" },
+          { "productName": "可乐(中)", "quantity": 1, "price": 450, "category": "饮料" }
+        ]
+      },
+      {
+        "orderId": "SYN-0002",
+        "orderTime": "2026-05-11 12:35:40",
+        "payAmount": 2400,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "双层吉士堡", "quantity": 1, "price": 1950, "category": "汉堡" },
+          { "productName": "可乐(小)", "quantity": 1, "price": 450, "category": "饮料" }
+        ]
+      },
+      {
+        "orderId": "SYN-0003",
+        "orderTime": "2026-05-28 20:10:05",
+        "payAmount": 4600,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店B（虚构）",
+        "products": [
+          { "productName": "麦辣鸡腿堡", "quantity": 1, "price": 2200, "category": "汉堡" },
+          { "productName": "麦旋风(奥利奥)", "quantity": 1, "price": 1400, "category": "甜品" },
+          { "productName": "可乐(中)", "quantity": 1, "price": 1000, "category": "饮料" }
+        ]
+      },
+      {
+        "orderId": "SYN-0004",
+        "orderTime": "2026-06-05 21:40:32",
+        "payAmount": 5800,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "巨无霸", "quantity": 2, "price": 2500, "category": "汉堡" },
+          { "productName": "可乐(大)", "quantity": 1, "price": 800, "category": "饮料" }
+        ]
+      },
+      {
+        "orderId": "SYN-0005",
+        "orderTime": "2026-06-19 23:15:47",
+        "payAmount": 3300,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店B（虚构）",
+        "products": [
+          { "productName": "麦乐鸡(5块)", "quantity": 1, "price": 1350, "category": "小食" },
+          { "productName": "麦咖啡拿铁(中)", "quantity": 1, "price": 1950, "category": "咖啡" }
+        ]
+      },
+      {
+        "orderId": "SYN-0006",
+        "orderTime": "2026-07-02 12:50:18",
+        "payAmount": 3400,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "麦辣鸡腿堡", "quantity": 1, "price": 2200, "category": "汉堡" },
+          { "productName": "薯条(中)", "quantity": 1, "price": 1200, "category": "小食" }
+        ]
+      },
+      {
+        "orderId": "SYN-0007",
+        "orderTime": "2026-07-03 13:05:02",
+        "payAmount": 3400,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "巨无霸", "quantity": 1, "price": 2500, "category": "汉堡" },
+          { "productName": "可乐(中)", "quantity": 1, "price": 450, "category": "饮料" },
+          { "productName": "薯条(中)", "quantity": 1, "price": 450, "category": "小食" }
+        ]
+      },
+      {
+        "orderId": "SYN-0008",
+        "orderTime": "2026-08-20 18:40:59",
+        "payAmount": 3400,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店C（虚构）",
+        "products": [
+          { "productName": "双层吉士堡", "quantity": 1, "price": 1950, "category": "汉堡" },
+          { "productName": "麦乐鸡(5块)", "quantity": 1, "price": 1450, "category": "小食" }
+        ]
+      },
+      {
+        "orderId": "SYN-0009",
+        "orderTime": "2026-09-03 22:50:26",
+        "payAmount": 2900,
+        "refundAmount": 2900,
+        "orderStatus": "已退款",
+        "storeName": "示例门店B（虚构）",
+        "products": [
+          { "productName": "麦乐鸡(5块)", "quantity": 1, "price": 1350, "category": "小食" },
+          { "productName": "麦旋风(奥利奥)", "quantity": 1, "price": 1550, "category": "甜品" }
+        ]
+      },
+      {
+        "orderId": "SYN-0010",
+        "orderTime": "2026-10-10 23:40:08",
+        "payAmount": 4200,
+        "refundAmount": 0,
+        "orderStatus": "已完成",
+        "storeName": "示例门店A（虚构）",
+        "products": [
+          { "productName": "巨无霸", "quantity": 1, "price": 2500, "category": "汉堡" },
+          { "productName": "薯条(大)", "quantity": 1, "price": 1200, "category": "小食" },
+          { "productName": "可乐(中)", "quantity": 1, "price": 500, "category": "饮料" }
+        ]
+      }
+    ]
+  }
+}
