@@ -1,0 +1,55 @@
+# ---- 运行产物 ----
+out/
+*.png
+*.svg
+# README 里的效果预览图是特意提交的
+!docs/*.png
+!docs/*.svg
+
+# ---- 真实订单数据：绝不入库 ----
+# fixtures/ 里的合成示例数据是特意提交的；下面这些是「你自己导出的真实数据」的常见落点
+orders*.json
+!fixtures/orders.json
+exports/
+data/
+*.orders.json
+report.json
+
+# ---- 凭证：绝不入库 ----
+.env
+.env.*
+*.token
+mcp-config.json
+.mcd_token
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- 临时目录 ----
+.tmp*/
+tmp/
+.cache/
+
+# ---- 编辑器 / 操作系统 ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
